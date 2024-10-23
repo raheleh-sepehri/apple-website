@@ -40,7 +40,7 @@ const ModelView = (props) => {
         position={[0, 0, 0]}
       >
         <Suspense fallback={<div>Loading</div>}>
-          <IPone scale={index===1 ? [15,15,15] : [17,17,17]} />
+          <IPone item={item} size={size} scale={index===1 ? [15,15,15] : [17,17,17]} />
         </Suspense>
       </group>
     </View>
